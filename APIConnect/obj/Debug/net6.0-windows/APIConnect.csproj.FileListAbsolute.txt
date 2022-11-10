@@ -16,3 +16,6 @@ D:\Projetos\C.APIConennect\APIConnect\obj\Debug\net6.0-windows\APIConnect.genrun
 D:\Projetos\C.APIConennect\APIConnect\obj\Debug\net6.0-windows\ref\APIConnect.dll
 D:\Projetos\C.APIConennect\APIConnect\obj\Debug\net6.0-windows\APIConnect.APIConnect.resources
 D:\Projetos\C.APIConennect\APIConnect\obj\Debug\net6.0-windows\APIConnect.Properties.Resources.resources
+D:\Projetos\C.APIConennect\APIConnect\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+D:\Projetos\C.APIConennect\APIConnect\bin\Debug\net6.0-windows\Newtonsoft.Json.Bson.dll
+D:\Projetos\C.APIConennect\APIConnect\obj\Debug\net6.0-windows\APIConnect.csproj.CopyComplete

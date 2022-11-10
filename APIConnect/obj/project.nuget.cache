@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "ZBNo7mlOD8uF2rPf7g1fZRxu2jCIWbqyoDzdzmpx56tA/NUB0+5P0gyaiCU5IW4yJyzf1FPD2Glubm01kgt0Xw==",
+  "dgSpecHash": "eBAc73GNw5CnUqa68CNcbowc8uWGBV5H68TDxBA3vqc/LZcmHRmP7jCmhzE+slSwkE6gcynTG2kCxywlkoyp6w==",
   "success": true,
   "projectFilePath": "D:\\Projetos\\C.APIConennect\\APIConnect\\APIConnect.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\thale\\.nuget\\packages\\newtonsoft.json\\12.0.1\\newtonsoft.json.12.0.1.nupkg.sha512",
+    "C:\\Users\\thale\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512"
+  ],
   "logs": []
 }

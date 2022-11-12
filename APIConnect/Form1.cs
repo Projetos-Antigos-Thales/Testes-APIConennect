@@ -163,7 +163,8 @@ namespace APIConnect
 
         private void btnClear_Click(object sender, EventArgs e)
         {
-
+            dataGridView1.Rows.Clear();
+            dataGridView1.Refresh();
         }
 
         private void GenerateConnection()

@@ -33,6 +33,7 @@
             this.nET31ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nET22ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtClassName = new System.Windows.Forms.TextBox();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnCreateClass = new System.Windows.Forms.Button();
             this.btnSearchFile1 = new System.Windows.Forms.Button();
@@ -89,6 +90,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.Controls.Add(this.txtClassName);
             this.panel1.Controls.Add(this.btnClear);
             this.panel1.Controls.Add(this.btnCreateClass);
             this.panel1.Controls.Add(this.btnSearchFile1);
@@ -99,9 +101,18 @@
             this.panel1.Size = new System.Drawing.Size(760, 522);
             this.panel1.TabIndex = 3;
             // 
+            // txtClassName
+            // 
+            this.txtClassName.Location = new System.Drawing.Point(470, 132);
+            this.txtClassName.Name = "txtClassName";
+            this.txtClassName.PlaceholderText = "Nome da Nova Classe";
+            this.txtClassName.Size = new System.Drawing.Size(278, 23);
+            this.txtClassName.TabIndex = 6;
+            this.txtClassName.Text = "NovaClasse";
+            // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(470, 135);
+            this.btnClear.Location = new System.Drawing.Point(470, 161);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(133, 41);
             this.btnClear.TabIndex = 5;
@@ -111,7 +122,7 @@
             // 
             // btnCreateClass
             // 
-            this.btnCreateClass.Location = new System.Drawing.Point(615, 135);
+            this.btnCreateClass.Location = new System.Drawing.Point(615, 161);
             this.btnCreateClass.Name = "btnCreateClass";
             this.btnCreateClass.Size = new System.Drawing.Size(133, 41);
             this.btnCreateClass.TabIndex = 4;
@@ -121,7 +132,7 @@
             // 
             // btnSearchFile1
             // 
-            this.btnSearchFile1.Location = new System.Drawing.Point(615, 14);
+            this.btnSearchFile1.Location = new System.Drawing.Point(615, 9);
             this.btnSearchFile1.Name = "btnSearchFile1";
             this.btnSearchFile1.Size = new System.Drawing.Size(133, 41);
             this.btnSearchFile1.TabIndex = 3;
@@ -140,10 +151,10 @@
             this.Header3,
             this.Header4,
             this.Header5});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 182);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 208);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(736, 327);
+            this.dataGridView1.Size = new System.Drawing.Size(736, 301);
             this.dataGridView1.TabIndex = 2;
             // 
             // Request
@@ -183,7 +194,7 @@
             // 
             // btnSearchFile2
             // 
-            this.btnSearchFile2.Location = new System.Drawing.Point(615, 64);
+            this.btnSearchFile2.Location = new System.Drawing.Point(615, 59);
             this.btnSearchFile2.Name = "btnSearchFile2";
             this.btnSearchFile2.Size = new System.Drawing.Size(133, 41);
             this.btnSearchFile2.TabIndex = 0;
@@ -230,6 +241,7 @@
             this.mStripOpcoes.ResumeLayout(false);
             this.mStripOpcoes.PerformLayout();
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -257,5 +269,6 @@
         private DataGridViewTextBoxColumn Header3;
         private DataGridViewTextBoxColumn Header4;
         private DataGridViewTextBoxColumn Header5;
+        private TextBox txtClassName;
     }
 }

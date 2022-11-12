@@ -63,9 +63,8 @@ namespace APIConnect
                         }
                         if (pCollection != null)
                         {
-#pragma warning disable CS8604 // Possible null reference argument.
-                            MessageBox.Show(pCollection.Item.FirstOrDefault()?.Name);
-                            GenerateConnection();
+                            // MessageBox.Show(pCollection.Item.FirstOrDefault()?.Name);
+
                         }
                     }
                     else
@@ -111,8 +110,22 @@ namespace APIConnect
                         }
                         if (pCollection != null)
                         {
-                            MessageBox.Show(pCollection.Item.FirstOrDefault()?.Name);
-                            GenerateConnection();
+                            // MessageBox.Show(pCollection.Item.FirstOrDefault()?.Name);
+
+                            foreach (Item item in pCollection.Item)
+                            {
+                                List<string> headers = new List<string>();
+                                for (int i = 0; i < item.Request.Header.Count; i++)
+                                {
+                                    headers.Add(item.Request.Header.ElementAt(i).Key + ": " + item.Request.Header.ElementAt(i).Value);
+                                }
+
+                                string[] row = { item.Name, item.Request.Method, item.Request.Url.Raw,
+                                        headers.Count > 0? headers.ElementAt(0): null, headers.Count > 1? headers.ElementAt(1): null,
+                                        headers.Count > 2? headers.ElementAt(2): null, headers.Count > 4? headers.ElementAt(3): null ,
+                                        headers.Count > 4? headers.ElementAt(4): null};
+                                dataGridView1.Rows.Add(row);
+                            }
                         }
                     }
                     else
@@ -158,7 +171,7 @@ namespace APIConnect
             try
             {
                 string newClass = GenerateClass("string", "ClasseTeste", "string p1, int p2, bool p3");
-                
+
                 string selectedFolder = "";
                 using (var fbd = new FolderBrowserDialog())
                 {

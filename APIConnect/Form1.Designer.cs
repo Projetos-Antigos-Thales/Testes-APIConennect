@@ -38,17 +38,18 @@
             this.btnCreateClass = new System.Windows.Forms.Button();
             this.btnSearchFile1 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnSearchFile2 = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.Request = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Method = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.URL = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Header1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Header2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Header3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Header4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Header5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnSearchFile2 = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.mStripOpcoes.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -146,6 +147,7 @@
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Request,
             this.Method,
+            this.URL,
             this.Header1,
             this.Header2,
             this.Header3,
@@ -156,41 +158,6 @@
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.Size = new System.Drawing.Size(736, 301);
             this.dataGridView1.TabIndex = 2;
-            // 
-            // Request
-            // 
-            this.Request.HeaderText = "Request";
-            this.Request.Name = "Request";
-            // 
-            // Method
-            // 
-            this.Method.HeaderText = "Método";
-            this.Method.Name = "Method";
-            // 
-            // Header1
-            // 
-            this.Header1.HeaderText = "Header 1";
-            this.Header1.Name = "Header1";
-            // 
-            // Header2
-            // 
-            this.Header2.HeaderText = "Header 2";
-            this.Header2.Name = "Header2";
-            // 
-            // Header3
-            // 
-            this.Header3.HeaderText = "Header 3";
-            this.Header3.Name = "Header3";
-            // 
-            // Header4
-            // 
-            this.Header4.HeaderText = "Header 4";
-            this.Header4.Name = "Header4";
-            // 
-            // Header5
-            // 
-            this.Header5.HeaderText = "Header 5";
-            this.Header5.Name = "Header5";
             // 
             // btnSearchFile2
             // 
@@ -221,6 +188,62 @@
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // Request
+            // 
+            this.Request.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Request.HeaderText = "Request";
+            this.Request.Name = "Request";
+            this.Request.Width = 74;
+            // 
+            // Method
+            // 
+            this.Method.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Method.HeaderText = "Método";
+            this.Method.Name = "Method";
+            this.Method.Width = 74;
+            // 
+            // URL
+            // 
+            this.URL.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.URL.HeaderText = "URL";
+            this.URL.Name = "URL";
+            this.URL.Width = 53;
+            // 
+            // Header1
+            // 
+            this.Header1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Header1.HeaderText = "Header 1";
+            this.Header1.Name = "Header1";
+            this.Header1.Width = 79;
+            // 
+            // Header2
+            // 
+            this.Header2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Header2.HeaderText = "Header 2";
+            this.Header2.Name = "Header2";
+            this.Header2.Width = 79;
+            // 
+            // Header3
+            // 
+            this.Header3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Header3.HeaderText = "Header 3";
+            this.Header3.Name = "Header3";
+            this.Header3.Width = 79;
+            // 
+            // Header4
+            // 
+            this.Header4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Header4.HeaderText = "Header 4";
+            this.Header4.Name = "Header4";
+            this.Header4.Width = 79;
+            // 
+            // Header5
+            // 
+            this.Header5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Header5.HeaderText = "Header 5";
+            this.Header5.Name = "Header5";
+            this.Header5.Width = 79;
             // 
             // APIConnect
             // 
@@ -262,13 +285,14 @@
         private DataGridView dataGridView1;
         private Button btnClear;
         private Button btnCreateClass;
+        private TextBox txtClassName;
         private DataGridViewTextBoxColumn Request;
         private DataGridViewTextBoxColumn Method;
+        private DataGridViewTextBoxColumn URL;
         private DataGridViewTextBoxColumn Header1;
         private DataGridViewTextBoxColumn Header2;
         private DataGridViewTextBoxColumn Header3;
         private DataGridViewTextBoxColumn Header4;
         private DataGridViewTextBoxColumn Header5;
-        private TextBox txtClassName;
     }
 }
